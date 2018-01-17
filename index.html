@@ -1,0 +1,40 @@
+<!--disaster-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=1">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <title>高雄市違規照相查詢</title>
+    </head>
+
+    <body>
+        <div class="wrap">
+            <div class="header">
+                <h3>高雄市違規照相查詢</h3>
+                <ul class="top-bar">
+                    <li>資料來源：警察局</li>
+                    <li>連絡電話：(07)241-6230</li>
+                </ul>
+            </div><!--header-->
+                <div class="title">
+                    <h4>設置地點</h4>
+            </div><!--menu-->
+            <div class="select">
+            <select id="area" class="select-style">
+                <option>---請選擇行政區---</option>
+            </select>
+            <select id="work" class="select-style" disabled>
+                <option>---請選擇違規事項---</option>
+            </select>
+            </div><!--select-->
+            <div class="content">
+                <div id="map"></div>
+            </div>
+
+        </div><!--wrap-->
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/all.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCHZ1hbbm97hxf9bfSCnJD5NMxyCTmzYek&callback=initMap" async defer></script>
+    </body>
+</html>
